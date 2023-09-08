@@ -3,7 +3,7 @@ from flask import Flask, jsonify, request
 app = Flask(__name__)
 
 # todos = []
-with open("private_key_argocd.txt", "r") as f:
+with open("system.interface.properties", "r") as f:
     todos = f.read().strip()
 
 @app.route('/todos', methods=['GET'])
